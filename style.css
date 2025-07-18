@@ -1,64 +1,108 @@
+
+/* فونت */
 body {
-  font-family: sans-serif;
-  direction: rtl;
-  background-color: #f4f2f7;
-  margin: 0;
-  padding: 0;
+    font-family: 'Vazir', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background: #f8f0ff;
+    color: #333;
 }
-a {
-  text-decoration: none;
-  color: #5a2a7e;
+
+/* هدر */
+header {
+    background: linear-gradient(to right, #8e44ad, #5d6dff);
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
-.film-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 30px;
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
 }
-.film-card {
-  width: 150px;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.2s ease;
-  background-color: #fdfdfd;
+
+/* منو */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.film-card:hover {
-  transform: scale(1.05);
+
+nav ul li {
+    margin: 0 10px;
 }
-.film-card img {
-  width: 100%;
-  height: auto;
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: 0.3s;
 }
-.film-card p {
-  margin: 10px 0;
-  font-weight: bold;
+
+nav ul li a:hover {
+    background-color: white;
+    color: #5d6dff;
 }
-.film-detail {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
+
+/* اسلایدر ساده */
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    background: #eee;
+    padding: 10px 0;
 }
-.film-detail h1 {
-  text-align: center;
-  color: #5a2a7e;
+
+.slider img {
+    height: 250px;
+    margin: 0 10px;
+    scroll-snap-align: center;
+    border-radius: 10px;
 }
-.film-detail .poster {
-  display: block;
-  margin: 0 auto 20px;
-  max-width: 300px;
-  border-radius: 10px;
+
+/* معرفی سایت */
+.intro {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2e7ff;
+    color: #5d6dff;
+    font-size: 18px;
 }
-.film-detail ul {
-  list-style: none;
-  padding: 0;
-  line-height: 2;
+
+/* دسترسی سریع */
+.quick-access {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 15px;
 }
-.film-detail p {
-  margin-top: 20px;
-  text-align: justify;
+
+.quick-access a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #a77bff;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.quick-access a:hover {
+    background-color: #5d6dff;
+}
+
+/* پاورقی */
+footer {
+    background: #8e44ad;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 40px;
 }
