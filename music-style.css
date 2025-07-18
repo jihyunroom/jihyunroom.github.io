@@ -1,0 +1,30 @@
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: #eee6f7;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #a566c7;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+section {
+    margin: 30px auto;
+    max-width: 700px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>پخش تصادفی</title>
+    <link rel="stylesheet" href="music-style.css">
+</head>
+<body>
+    <header><h1>🎧 آهنگ تصادفی گوش بده!</h1></header>
+    <section class="random-player">
+        <p>روی دکمه زیر کلیک کن تا یه آهنگ تصادفی برات پخش بشه!</p>
+        <button onclick="playRandom()">پخش کن!</button>
+        <audio id="player" controls style="margin-top: 20px;"></audio>
+    </section>
+
+    <script>
+        const player = document.getElementById('player');
+        const tracks = [
+            'songs/track1.mp3',
+            'songs/track2.mp3'
+        ];
+
+        function playRandom() {
+            const randomIndex = Math.floor(Math.random() * tracks.length);
+            player.src = tracks[randomIndex];
+            player.play();
+        }
+    </script>
+</body>
+</html>
