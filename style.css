@@ -1,0 +1,38 @@
+body {
+    background: linear-gradient(to right, #a18cd1, #fbc2eb);
+    font-family: 'Tahoma', sans-serif;
+    color: #333;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #6c5ce7;
+    color: white;
+}
+main {
+    padding: 2rem;
+}
+.drama-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.drama {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.drama h2 a {
+    color: #6c5ce7;
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+    margin-top: 2rem;
+}
